@@ -4,7 +4,7 @@ var animals = ['cat', 'dog', 'bird', 'horse', 'fish'];
 
 
 function renderButton() {
-    $('animals').empty();
+    $('#animalbuttons').empty();
 
     // Loop through animal array
     for (var i = 0; i < animals.length; i++) {
@@ -63,7 +63,7 @@ $(document).on('click', '#addAnimal', function() {
 });
 
 // Pause animal gifs
-function pauseGifs() {
+function pausingGifs() {
     var state = $(this).attr('data-state');
     if (state == 'still') {
         $(this).attr('src', $(this).data('animate'));
