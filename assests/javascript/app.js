@@ -59,6 +59,7 @@ $(document).on('click', '#addAnimal', function() {
     animals.push(animal);
     renderButton();
     pausingGifs();
+   	clickOnAnimal();
     return false;
 });
 
